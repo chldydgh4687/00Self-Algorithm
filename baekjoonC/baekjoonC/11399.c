@@ -31,11 +31,20 @@ int main() {
 			}
 		}
 	}
-
-	for (i = ar+n -1; i >= ar; i--) {
+	//내코드
+	/*for (i = ar+n -1; i >= ar; i--) {
 		for (j = i; j >= ar; j--) {
 			sum += *j;
 		}
+	}*/
+
+	//cpp코드 참고한 코드
+
+	int save = ar[0];
+
+	for (i = ar + 1; i < ar + n; i++) {
+		*i += *(i - 1);
+		save += *i;
 	}
 
 	printf("%d\n", sum);
