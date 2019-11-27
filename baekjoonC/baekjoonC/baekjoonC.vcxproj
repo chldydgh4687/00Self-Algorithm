@@ -21,7 +21,9 @@
   <ItemGroup>
     <ClCompile Include="1120.c" />
     <ClCompile Include="11399.c" />
+    <ClCompile Include="1931.c" />
     <ClCompile Include="2675.c" />
+    <ClCompile Include="ex.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D9DEAFE4-C753-41B6-A276-6820800A3C7D}</ProjectGuid>
@@ -80,6 +82,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
