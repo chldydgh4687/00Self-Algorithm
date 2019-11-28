@@ -1,2 +1,4 @@
-﻿  baekjoonC.vcxproj -> C:\Users\Yongho Choi\Documents\GitHub\Algorithm\baekjoonC\Debug\baekjoonC.exe
+﻿  1.c
+c:\users\yongho choi\documents\github\algorithm\baekjoonc\baekjoonc\1.c(8): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+  baekjoonC.vcxproj -> C:\Users\Yongho Choi\Documents\GitHub\Algorithm\baekjoonC\Debug\baekjoonC.exe
   baekjoonC.vcxproj -> C:\Users\Yongho Choi\Documents\GitHub\Algorithm\baekjoonC\Debug\baekjoonC.pdb (Partial PDB)
