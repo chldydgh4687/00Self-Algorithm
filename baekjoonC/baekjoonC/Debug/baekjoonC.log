@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 ﻿  1.c
 c:\users\yongho choi\documents\github\algorithm\baekjoonc\baekjoonc\1.c(8): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
@@ -13,6 +14,9 @@ c:\users\s2blu\desktop\git\algorithm\baekjoonc\baekjoonc\1931.c(34): warning C40
 c:\users\s2blu\desktop\git\algorithm\baekjoonc\baekjoonc\1931.c(34): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
 c:\users\s2blu\desktop\git\algorithm\baekjoonc\baekjoonc\1931.c(23): warning C4101: 'swap' :참조되지 않은 지역 변수입니다.
 c:\users\s2blu\desktop\git\algorithm\baekjoonc\baekjoonc\1931.c(25): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+=======
+﻿  5585.c
+>>>>>>> Stashed changes
   baekjoonC.vcxproj -> C:\Users\s2blu\Desktop\git\Algorithm\baekjoonC\Debug\baekjoonC.exe
   baekjoonC.vcxproj -> C:\Users\s2blu\Desktop\git\Algorithm\baekjoonC\Debug\baekjoonC.pdb (Partial PDB)
 >>>>>>> master

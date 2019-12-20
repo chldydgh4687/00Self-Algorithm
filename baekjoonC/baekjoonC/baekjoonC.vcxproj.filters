@@ -34,5 +34,8 @@
 >>>>>>> master
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="5585.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
