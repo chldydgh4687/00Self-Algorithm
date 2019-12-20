@@ -86,9 +86,9 @@
 
 /*
 if (a->en == b->en) {
-	if (a->st > b->st) {
-		return 1;
-	}
+if (a->st > b->st) {
+return 1;
+}
 }*/
 /*
 5

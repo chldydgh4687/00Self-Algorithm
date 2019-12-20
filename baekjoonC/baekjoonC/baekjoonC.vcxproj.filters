@@ -18,23 +18,19 @@
     <ClCompile Include="1120.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1931.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="2675.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11399.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="11047.c">
-=======
-    <ClCompile Include="ex.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1931.c">
->>>>>>> master
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="5585.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11047.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11399.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

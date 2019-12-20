@@ -18,17 +18,8 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="11047.c" />
-    <ClCompile Include="1120.c" />
-    <ClCompile Include="11399.c" />
-    <ClCompile Include="1931.c" />
-    <ClCompile Include="2675.c" />
-    <ClCompile Include="5585.c" />
-    <ClCompile Include="ex.c" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D9DEAFE4-C753-41B6-A276-6820800A3C7D}</ProjectGuid>
+    <ProjectGuid>{FED2FD2A-85AA-4C1F-840A-2C1135ACCDD7}</ProjectGuid>
     <RootNamespace>baekjoonC</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -84,9 +75,6 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -121,6 +109,14 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="11047.c" />
+    <ClCompile Include="1120.c" />
+    <ClCompile Include="11399.c" />
+    <ClCompile Include="1931.c" />
+    <ClCompile Include="2675.c" />
+    <ClCompile Include="5585.c" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
