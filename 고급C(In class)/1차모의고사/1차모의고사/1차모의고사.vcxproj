@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4EEFF54C-9689-4E1E-93D4-D5F3DE8DCE2F}</ProjectGuid>
-    <RootNamespace>문자열</RootNamespace>
+    <ProjectGuid>{55552CA2-86FC-4A56-989B-1B63F5161D1C}</ProjectGuid>
+    <RootNamespace>My1차모의고사</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -75,9 +75,6 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -113,22 +110,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="과제2.c" />
-    <ClCompile Include="과제3.c" />
-    <ClCompile Include="과제4.c" />
-    <ClCompile Include="실습10.c" />
-    <ClCompile Include="과제1.c" />
-    <ClCompile Include="실습11.c" />
-    <ClCompile Include="실습12.c" />
-    <ClCompile Include="실습5.c" />
-    <ClCompile Include="실습1.c" />
-    <ClCompile Include="실습2.c" />
-    <ClCompile Include="실습3.c" />
-    <ClCompile Include="실습4.c" />
-    <ClCompile Include="실습6.c" />
-    <ClCompile Include="실습7.c" />
-    <ClCompile Include="실습8.c" />
-    <ClCompile Include="실습9.c" />
+    <ClCompile Include="1.c" />
+    <ClCompile Include="2.c" />
+    <ClCompile Include="3.c" />
+    <ClCompile Include="4.c" />
+    <ClCompile Include="5.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
