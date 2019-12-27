@@ -205,3 +205,62 @@
 Qej15J
 SchOOL
 */
+
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char str[21] = { 0 };
+	char num[3] = { 0 };
+	int n;
+	gets(str);
+	scanf("%d", &n);
+
+	int i, j, k;
+	for (i = 0; i < strlen(str); i++) {
+		if (str[i] >= 'A' && str[i] <= 'Z') {
+			str[i] += n;
+		}
+		else if (str[i] >= 'a' && str[i] <= 'z') {
+			str[i] -= n;
+		}
+		else if (str[i] >= '0' && str[i] <= '9') {
+			//첫째자리 1혹은 2이면
+			if (str[i] == '1' || str[i] == '2') {
+				num[0] = str[i];
+				//둘째 자릿 수 
+				if (str[i + 1] >= '0' && str[i + 1] <= '7') {
+					num[1] = str[i + 1];
+				}
+
+				// atoi 통해서 알파벳
+				str[i] = 'A' + atoi(num) - 1;
+
+				// 두자리를 하나의 알파벳으로 바꿔서 하나씩 댕김
+				for (j = i + 2; j < strlen(str) + 1; j++) {
+					str[j - 1] = str[j];
+				}
+			}
+			else {
+				//한자릿 수 일 경우
+				num[0] = str[i];
+				str[i] = atoi(num) + 'A' - 1;
+			}
+			// 횟수 n만큼
+
+			for (j = 0; j < n - 1; j++) {
+				for (k = strlen(str); k > i; k--) {
+					str[k] = str[k - 1];
+				}
+				i++;
+			}
+
+		}
+		else {
+			str[i] = ' ';
+		}
+	}
+	printf("%s", str);
+}

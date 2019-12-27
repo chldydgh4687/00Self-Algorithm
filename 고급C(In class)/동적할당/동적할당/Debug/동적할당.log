@@ -1,0 +1,4 @@
+﻿  실습13.c
+c:\users\yongho choi\documents\github\algorithm\고급c(in class)\동적할당\동적할당\실습13.c(67): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  동적할당.vcxproj -> C:\Users\Yongho Choi\Documents\GitHub\Algorithm\고급C(In class)\동적할당\Debug\동적할당.exe
+  동적할당.vcxproj -> C:\Users\Yongho Choi\Documents\GitHub\Algorithm\고급C(In class)\동적할당\Debug\동적할당.pdb (Partial PDB)
