@@ -113,6 +113,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1차모의고사(동적할당)4.c" />
+    <ClCompile Include="과제1.c" />
+    <ClCompile Include="과제2.c" />
+    <ClCompile Include="과제3.c" />
+    <ClCompile Include="과제4.c" />
     <ClCompile Include="실습1.c" />
     <ClCompile Include="실습10.c" />
     <ClCompile Include="실습11.c" />

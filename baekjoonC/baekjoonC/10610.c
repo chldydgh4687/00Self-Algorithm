@@ -70,3 +70,146 @@
 //
 //	free(p);
 //}
+
+
+
+//풀었으나 비효율적..
+
+
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <stdlib.h>
+//void thirty(int insect, int*p, int*q, int size);
+//int compare(const void *a,const void *b);
+//int main()
+//{
+//	int N;
+//	scanf("%d", &N);
+//
+//	int *p = (int*)malloc(1*sizeof(int));
+//	int a = N;
+//	int r, i = 0;
+//	while (a != 0) {
+//		r = a % 10;
+//		a = a / 10;
+//		p[i] = r;
+//		i++;
+//		p = (int*)realloc(p, (i+1)*sizeof(int));
+//	}
+//
+//	
+//	
+//	int size = i;
+//
+//	qsort(p, size, sizeof(int), compare);
+//	int *q = (int*)malloc(size * sizeof(int));
+//	
+//	if (size == 1) {
+//		printf("-1");
+//		free(p);
+//		free(q);
+//		return 0;
+//	}
+//	else if (size == 2) {
+//		thirty( 90, p, q, size);
+//		free(p);
+//		free(q);
+//		return 0;
+//	}
+//	else if (size == 3) {
+//		thirty(990, p, q, size);
+//		free(p);
+//		free(q);
+//		return 0;
+//	}
+//	else if (size == 4){
+//		thirty(9990, p, q, size);
+//		free(p);
+//		free(q);
+//		return 0;
+//	}
+//	else {
+//		thirty(99990, p, q, size);
+//		free(p);
+//		free(q);
+//		return 0;
+//	}
+//
+//}
+//
+//void thirty(int insect, int*p, int*q, int size) {
+//
+//	int in = insect, a;
+//	int i = 0, j, k;
+//	int cnt = 0;
+//
+//	while (1) {
+//		a = in % 10;
+//		in = in / 10;	
+//		*(q+i) = a;
+//
+//		i++;
+//		if (i == size) {
+//			qsort(q, size, sizeof(int), compare);
+//
+//			for (j = 0; j < size; j++) {
+//				/*printf(" %d, %d %d\n", j,*(p + j), *(q + j));*/
+//				if (*(p+j) == *(q + j)) {
+//					cnt++;
+//				}
+//				else {
+//					break;
+//				}
+//			}
+//			if (cnt == size) {
+//				printf("%d", insect);
+//				break;
+//			}
+//			else {
+//				insect -= 30;
+//				in = insect;
+//				i = 0;
+//				cnt = 0;
+//				if (insect == 0) {
+//					printf("-1");
+//					break;
+//				}
+//			}
+//		}
+//	}
+//}
+//int compare(const void *a, const void *b) {	
+//
+//	int num1 = *(int *)a;
+//	int num2 = *(int *)b;
+//
+//	if (num1 < num2)    // a가 b보다 작을 때는
+//		return -1;      // -1 반환
+//
+//	if (num1 > num2)    // a가 b보다 클 때는
+//		return 1;       // 1 반환
+//
+//	return 0;    // a와 b가 같을 때는 0 반환
+//}
+/*http://wookje.dance/2018/01/08/boj-10610-30/*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int i, sum, cnt[10];
+char str[100002];
+
+int main() {
+	scanf("%s", str);
+
+//CNT 정수가 무엇이 있는지 COUNT, 각 자리수의 합
+	for (i = 0; str[i]; i++)
+		cnt[str[i] - '0']++, sum += str[i] - '0';
+
+//0이 없거나 3의 배수일 경우 탈락이므로 -1 프린트
+	if (!cnt[0] || sum % 3) return ~printf("-1");
+//CNT 해당 정수 0 될때까지 높은 수부터 순서대로 꺼내준다.
+	for (i = 9; i >= 0; i--)
+		while (cnt[i]--) printf("%d", i);
+
+	return 0;
+}

@@ -45,27 +45,27 @@
 //}
 
 //참고 scanf 받는 형식 기억하기 
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-
-int main()
-{
-	int num,sum = 0,m_key = 0;
-	char ch;
-
-	while (1) {
-		scanf("%d%c", &num, &ch);
-		
-		if (m_key == 0) sum += num;
-		else sum -= num;
-
-		if (ch == '-') m_key = 1;
-		
-		if (ch == '\n') break;
-	}
-
-	printf("%d", sum);
-}
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int num,sum = 0,m_key = 0;
+//	char ch;
+//
+//	while (1) {
+//		scanf("%d%c", &num, &ch);
+//		
+//		if (m_key == 0) sum += num;
+//		else sum -= num;
+//
+//		if (ch == '-') m_key = 1;
+//		
+//		if (ch == '\n') break;
+//	}
+//
+//	printf("%d", sum);
+//}
 
 /*
 풀이 : 핵심 알고리즘은 - 가 시작되면 뒤의 수는 +, - 가 나오든 모두 빼주면된다.

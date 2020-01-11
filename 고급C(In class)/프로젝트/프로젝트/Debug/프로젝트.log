@@ -1,0 +1,6 @@
+﻿  2.c
+c:\users\s2blu\desktop\git\algorithm\고급c(in class)\프로젝트\프로젝트\2.c(20): warning C4101: 'copy' :참조되지 않은 지역 변수입니다.
+c:\users\s2blu\desktop\git\algorithm\고급c(in class)\프로젝트\프로젝트\2.c(71): warning C4098: 're_gister': 'void' 함수에서 값을 반환하고 있습니다.
+c:\users\s2blu\desktop\git\algorithm\고급c(in class)\프로젝트\프로젝트\2.c(165): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
+  프로젝트.vcxproj -> C:\Users\s2blu\Desktop\git\Algorithm\고급C(In class)\프로젝트\Debug\프로젝트.exe
+  프로젝트.vcxproj -> C:\Users\s2blu\Desktop\git\Algorithm\고급C(In class)\프로젝트\Debug\프로젝트.pdb (Partial PDB)
