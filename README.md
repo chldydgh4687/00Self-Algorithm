@@ -6,6 +6,7 @@
 
 ## 자료구조
 - Arraylist
+- Arraylist.ver2 (clean)
 - LinkedList
 - CircularList
 
