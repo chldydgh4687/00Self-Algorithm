@@ -6,8 +6,8 @@
 
 ## 자료구조
 - Arraylist
-- Arraylist.ver2 (clean)
 - LinkedList
+- LinkedList.ver2 (clean)
 - CircularList
 
 ## 고급C(In class)
