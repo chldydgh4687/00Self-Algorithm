@@ -10,7 +10,8 @@
 - LinkedList.ver2 (clean)
 - LinkedList_심화 (순회, 병합, 역순)
 - CircularList
-
+- PolynomialList (리스트로 구현한 다항식)
+  
 ## 고급C(In class)
 - 포인터
 - 문자열
