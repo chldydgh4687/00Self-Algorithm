@@ -2,6 +2,7 @@
 ---
 
 ## BAEKJOON(C,CPP,PYTHON) 
+### C Language
 - 그리드 알고리즘 (진행중)
 
 ## 자료구조
