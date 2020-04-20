@@ -1,4 +1,4 @@
-# 
+# 이중연결리스트
 
 ```c
 #define _CRT_SECURE_NO_WARNINGS
