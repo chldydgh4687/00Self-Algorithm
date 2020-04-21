@@ -5,138 +5,140 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define _CRT_DBG_MAP_ALLOC
-#include <crtdbg.h>
+//#define _CRTDBG_MAP_ALLOC
+//#include <crtdbg.h>
 
 typedef struct ListNode {
-	char data;
-	struct ListNode *pLink;
+	char elem;
+	struct ListNode *prev;
+	struct ListNOde *next;
 }LN;
 
-typedef struct Linkedlist {
+typedef struct DoubleList {
 	int n;
-	struct ListNode h;
-	struct ListNode t;
-}LL;
+	struct ListNode H;
+	struct ListNode T;
+}DL;
 
-LL *create_List();
-void add(LL *list, int r, char e);
-void delete(LL *list, int r);
-char get(LL *list, int r);
-void print(LL *list);
-void deleteelement(LL *list);
-
-void main() {
-	int c_num; scanf("%d", &c_num);
-	char command, data;
-	int i, rank;
-	LL *list = create_List();
-	for (i = 0; i < c_num; i++) {
-		getchar();
-		scanf("%c", &command);
-		if (command == 'A') {
-			scanf("%d %c", &rank, &data);
-			add(list, rank, data);
-		}
-		else if (command == 'G') {
-			scanf("%d", &rank);
-			printf("%c\n", get(list, rank));
-		}
-		else if (command == 'R') {
-			scanf("%d", &rank);
-			delete(list, rank);
-		}
-		else if (command == 'P') {
-			print(list);
-		}
-	}
-	deleteelement(list);
-	free(list);
-
-	_CrtDumpMemoryLeaks();
-	return 0;
-}
-LL *create_List() {
-	LL *new_list = (LL*)malloc(sizeof(LL));
+DL* initialize() {
+	DL *new_list = (DL*)malloc(sizeof(DL));
 	if (new_list != NULL) {
-		new_list->h.pLink = &(new_list->t);
+		new_list->H.next = &(new_list->T);
+		new_list->T.prev = &(new_list->H);
 		new_list->n = 0;
 		return new_list;
 	}
 	else {
-		printf("Allocation_ERROR");
-		return 0;
+		return NULL;
 	}
 }
-void add(LL *list, int r, char e) {
-	LL *p = list;
-	if ((r < 1) || (r >(p->n) + 1)) {
+
+void print(DL *list) {
+	DL *plist = list;
+	LN *p = plist->H.next;
+	while (p != &(plist->T)) {
+		printf("%c", p->elem);
+		p = p->next;
+	}
+	return;
+}
+
+void add(DL *list, int r, char e) {
+	if (((r < 1) || (r >(list->n) + 1))) {
 		printf("invalid position\n");
 		return;
 	}
-	LN *new_node = (LN*)malloc(sizeof(LN));
-	if (new_node != NULL) {
-		new_node->data = e;
-		LN *q = &(p->h);
-		LN *next = NULL;
-		for (int i = 1; i < r; i++)
-			q = q->pLink;
-		next = q->pLink;
-		q->pLink = new_node;
-		new_node->pLink = next;
+	LN *q = (LN*)malloc(sizeof(LN));
+	if (q != NULL) {
+		q->next = NULL;
+		q->prev = NULL;
+		q->elem = e;
+		LN *p = &(list->H); int i;
+		for (i = 1; i <= r; i++)
+			p = p->next;
 
-		p->n++;
-		return;
+		q->prev = p->prev;
+		q->next = p;
+		(p->prev)->next = q;
+		p->prev = q;
+		list->n++;
 	}
 	else {
-		printf("allocation_ERROR");
 		return;
 	}
+	return;
 }
-void delete(LL *list, int r) {
-	LL *p = list;
-	if ((r < 1) || (r >(p->n))) {
-		printf("invalid position\n");
-		return;
-	}
-	LN *prev = &(p->h);
-	LN *target = NULL;
-	for (int i = 1; i < r; i++)
-		prev = prev->pLink;
-	target = prev->pLink;
-	prev->pLink = target->pLink;
-	free(target);
 
-	p->n--;
-	return;
-}
-char get(LL *list, int r) {
-	LL *p = list;
-	if ((r < 1) || (r >(p->n))) {
+
+void delete(DL *list, int r) {
+	if ((r<1) || (r>list->n)) {
 		printf("invalid position\n");
-		return 0;
+		return;
 	}
-	LN *get_node = &(p->h);
-	for (int i = 1; i <= r; i++) {
-		get_node = get_node->pLink;
-	}
-	return get_node->data;
-}
-void print(LL *list) {
-	LL *p = list;
-	LN *node = p->h.pLink;
-	while (node != &(p->t)) {
-		printf("%c", node->data);
-		node = node->pLink;
-	}
-	printf("\n");
+	LN *p = &(list->H); int i;
+	LN *pL = NULL, *pR = NULL;
+	for (i = 1; i <= r; i++)
+		p = p->next;
+	pL = p->prev; pR = p->next;
+	pL->next = p->next;
+	pR->prev = p->prev;
+	list->n--;
+	free(p);
 	return;
 }
-void deleteelement(LL *list) {
-	LL *p = list;
-	for (int i = 0; i < p->n; i++) {
-		delete(list, 1);
+
+void clearelement(DL *list) {
+	if (list != NULL) {
+		while (list->n > 0) {
+			delete(list, 1);
+		}
 	}
 	return;
+}
+
+char get(DL *list, int r) {
+	if ((r<1) || (r>list->n)) {
+		printf("invalid position\n");
+		return NULL;
+	}
+	LN *p = &(list->H); int i;
+	for (i = 1; i <= r; i++)
+		p = p->next;
+	return p->elem;
+}
+
+int main() {
+	int c_num, i, r;
+	char command, e;
+	DL *list = initialize();
+	scanf("%d", &c_num);
+	for (i = 0; i < c_num; i++) {
+		getchar();
+		scanf("%c", &command);
+		if (command == 'A') {
+			scanf(" %d %c", &r, &e);
+			add(list, r, e);
+		}
+		else if (command == 'D') {
+			scanf("%d", &r);
+			delete(list, r);
+		}
+		else if (command == 'G') {
+			scanf(" %d", &r);
+			if (get(list, r) != NULL) {
+				printf("%c\n", get(list, r));
+			}
+		}
+		else if (command == 'P') {
+			print(list);
+			printf("\n");
+		}
+	}
+	clearelement(list);
+	free(list);
+	
+	/*_CrtDumpMemoryLeaks();*/
+
+	return 0;
 }
 ```
