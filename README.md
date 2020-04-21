@@ -1,8 +1,3 @@
-# OJ-Algorithm
-: 온라인 저지및 학습을 통해서 공부한 알고리즘에 대해 정리하고 기록한 repo입니다.
-
----
-
 ## BOJ (백준 온라인 저지)
 - 그리드 알고리즘 - 진행중
 
@@ -12,3 +7,10 @@
 - Level3
 
 ## Datastructure (자료구조)
+
+---
+
+# wiki
+- Frame_Stewart_algorithm (2003) : 다중 하노이의 탑 
+- LIS(Longest Increasing Subsequence) : 최대 증가 부분 수열
+- 에라토스테네스의 체 : 소수찾기
