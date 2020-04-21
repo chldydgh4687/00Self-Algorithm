@@ -192,24 +192,24 @@
 //	return 0;    // a와 b가 같을 때는 0 반환
 //}
 /*http://wookje.dance/2018/01/08/boj-10610-30/*/
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-
-int i, sum, cnt[10];
-char str[100002];
-
-int main() {
-	scanf("%s", str);
-
-//CNT 정수가 무엇이 있는지 COUNT, 각 자리수의 합
-	for (i = 0; str[i]; i++)
-		cnt[str[i] - '0']++, sum += str[i] - '0';
-
-//0이 없거나 3의 배수일 경우 탈락이므로 -1 프린트
-	if (!cnt[0] || sum % 3) return ~printf("-1");
-//CNT 해당 정수 0 될때까지 높은 수부터 순서대로 꺼내준다.
-	for (i = 9; i >= 0; i--)
-		while (cnt[i]--) printf("%d", i);
-
-	return 0;
-}
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//
+//int i, sum, cnt[10];
+//char str[100002];
+//
+//int main() {
+//	scanf("%s", str);
+//
+////CNT 정수가 무엇이 있는지 COUNT, 각 자리수의 합
+//	for (i = 0; str[i]; i++)
+//		cnt[str[i] - '0']++, sum += str[i] - '0';
+//
+////0이 없거나 3의 배수일 경우 탈락이므로 -1 프린트
+//	if (!cnt[0] || sum % 3) return ~printf("-1");
+////CNT 해당 정수 0 될때까지 높은 수부터 순서대로 꺼내준다.
+//	for (i = 9; i >= 0; i--)
+//		while (cnt[i]--) printf("%d", i);
+//
+//	return 0;
+//}

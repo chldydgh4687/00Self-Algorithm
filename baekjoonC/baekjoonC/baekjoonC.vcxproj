@@ -119,8 +119,11 @@
     <ClCompile Include="11399.c" />
     <ClCompile Include="1541.c" />
     <ClCompile Include="1931.c" />
+    <ClCompile Include="2212.c" />
     <ClCompile Include="2217.c" />
+    <ClCompile Include="2352.c" />
     <ClCompile Include="2675.c" />
+    <ClCompile Include="2727.c" />
     <ClCompile Include="2875.c" />
     <ClCompile Include="5585.c" />
   </ItemGroup>
