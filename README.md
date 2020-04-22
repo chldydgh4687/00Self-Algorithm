@@ -12,6 +12,8 @@
 - PolyLinkedList
   
 ---
+# Google-Kickstart
+---
 
 # 위키
 - Frame_Stewart_algorithm (2003) : 다중 하노이의 탑 
