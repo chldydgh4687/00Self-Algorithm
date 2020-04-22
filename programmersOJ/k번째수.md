@@ -37,7 +37,7 @@ results
 
 # 소스 코드
 
-```
+```c++
 #include <algorithm>
 #include <iostream>
 #include <vector>
