@@ -22,3 +22,4 @@
 - 7676 - 20.04.21
 - (주말에 보충)
 - [2529 - 20.04.23](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/BOJ/2529.md)
+- [1969 - 20.04.24]()
