@@ -23,3 +23,5 @@
 - (주말에 보충)
 - [2529 - 20.04.23](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/BOJ/2529.md)
 - [1969 - 20.04.24](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/BOJ/1969.md)
+----------------------------------------------------자료구조퀴즈(04.25~29)--------------------------------------------------
+
