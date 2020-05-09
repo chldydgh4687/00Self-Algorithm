@@ -7,6 +7,6 @@
 - [가운데 글자 가져오기 : c++ STL string - 20.04.30](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%EA%B0%80%EC%9A%B4%EB%8D%B0%20%EA%B8%80%EC%9E%90%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.md)
 - [완주하지 못한 선수 : c++ STL 해시테이블 - 20.05.02](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80%EB%AA%BB%ED%95%9C%EC%84%A0%EC%88%98.md)  
 
-----------------------------------------------------중간 고사(04.29~05.08)--------------------------------------------------
+  ----------------------------------------------------중간 고사(04.29~05.08)--------------------------------------------------
 - [문자열 내 p와 y의 개수 : c++ 기본](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%82%B4%20p%EC%99%80y%EC%9D%98%20%EA%B0%9C%EC%88%98.md)
 - [나누어 떨어지는 숫자 배열 : c++ 기본](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%EB%82%98%EB%88%84%EC%96%B4%20%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94%20%EC%88%AB%EC%9E%90%20%EB%B0%B0%EC%97%B4.md)
