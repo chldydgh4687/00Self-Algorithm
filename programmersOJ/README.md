@@ -13,5 +13,5 @@
 - [문자열 내림차순으로 배치하기 : c++기본(정렬) - 20.05.09](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0.md)
 - [서울에서 김서방 찾기 : c++ 기본(정수 문자열 변환) - 20.05.10](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C%20%EA%B9%80%EC%84%9C%EB%B0%A9%20%EC%B0%BE%EA%B8%B0.md)
 - [약수의 합 : c++ 기본 - 20.05.11](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%EC%95%BD%EC%88%98%EC%9D%98%20%ED%95%A9.md) 
-- [모의고사 : c++ 기본(벡터 이용) - 20.05.12]()
+- [모의고사 : c++ 기본(벡터 이용) - 20.05.12](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC.md)
 - [[1차]다트 게임 : 2018 KAKAO BLIND RECRUITMENT - 20.05.13](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%5B1%EC%B0%A8%5D%EB%8B%A4%ED%8A%B8%20%EA%B2%8C%EC%9E%84.md) 
