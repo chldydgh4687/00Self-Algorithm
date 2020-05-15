@@ -19,4 +19,5 @@
 - 2016년 : 생기초 - 20.05.13
 - [[1차]다트 게임 : 2018 KAKAO BLIND RECRUITMENT - 20.05.13](https://github.com/chldydgh4687/OJ-Algorithm/blob/master/programmersOJ/%5B1%EC%B0%A8%5D%EB%8B%A4%ED%8A%B8%20%EA%B2%8C%EC%9E%84.md) 
 - 같은 숫자는 싫어 : 생기초 - 20.05.15
-- x만큼 간격이 있는 n개의 숫자 - 20.05.15
+- x만큼 간격이 있는 n개의 숫자 : 생기초 - 20.05.15
+- 행렬의 덧셈 : vector 기초 - 20.05.15
