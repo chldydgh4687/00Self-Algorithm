@@ -2,8 +2,8 @@
 - **그리드 알고리즘 - 진행중**
 
 # programmersOJ (프로그래머스 코딩 테스트 연습)
-- **Level1 - 진행중**
-- Level2
+- ~~Level1~~ (정리중)
+- **Level2 진행중
 - Level3
 
 # Datastructure (자료구조)
