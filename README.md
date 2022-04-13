@@ -1,5 +1,5 @@
 # BOJ (백준 온라인 저지)
-- **그리드 알고리즘 - 진행중**
+- [[solved.ac : 백준 난이도별 문제](https://solved.ac/problems/level)]
 
 # programmersOJ (프로그래머스 코딩 테스트 연습)
 - ~~Level1~~ (정리중)
