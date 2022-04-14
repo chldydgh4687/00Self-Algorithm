@@ -16,12 +16,6 @@
 - PolyLinkedList
   
 ---
-# Google-Kickstart
-- **2018** 
-- 2019
-- 2020
-
----
 
 # 위키
 - **Frame_Stewart_algorithm (2003) : 다중 하노이의 탑**
