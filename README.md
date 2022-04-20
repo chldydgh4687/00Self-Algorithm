@@ -1,5 +1,9 @@
 # BOJ (백준 온라인 저지)
-- [[solved.ac : 백준 난이도별 문제](https://solved.ac/problems/level)]
+- [[solved.ac : 백준 난이도별 문제](https://solved.ac/problems/level)]  
+  
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=yonge25)](https://solved.ac/yonge25)
+
 
 # programmersOJ (프로그래머스 코딩 테스트 연습)
 - ~~Level1~~ (정리중)
@@ -11,12 +15,6 @@
 - DoubleLinkedList
 - PolyLinkedList
   
----
-# Google-Kickstart
-- **2018** 
-- 2019
-- 2020
-
 ---
 
 # 위키
